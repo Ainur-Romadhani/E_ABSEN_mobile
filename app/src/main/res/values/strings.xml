@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="app_name">Intro View</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">E-Absen PKL</string>
+    <string name="slide_1_desc">Sekolah Menengah Kejuruan Negeri 1 Sumenep </string>
+    <string name="slide_2_title">QR Code</string>
+    <string name="slide_2_desc">Absen Menggunakan Qr Code</string>
+    <string name="slide_3_title">Realtime</string>
+    <string name="slide_3_desc" />
+    <string name="play_again_desc">
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+Untuk melihatnya lagi Settings -> apps -> Intro View -> clear data
+</string>
+    <string name="play_again">Play Again</string>
+</resources>

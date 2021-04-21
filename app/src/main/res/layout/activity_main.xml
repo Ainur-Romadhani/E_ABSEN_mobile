@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/profile"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Nama"
+            android:textColor="#ffff"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+            android:id="@+id/setkelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/profile"
+            android:fontFamily="@font/roboto_regular"
+            android:text="XII"
+            android:textColor="#ffff"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/setjurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/setkelas"
+            android:fontFamily="@font/roboto_regular"
+            android:text="TKJ 2"
+            android:textColor="#ffff"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/setnis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setkelas"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/profile"
+            android:fontFamily="@font/roboto_regular"
+            android:text="2102187143"
+            android:textColor="#ffff"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:background="#0000"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/TextView5"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text=" Alamat: "
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
+
+        <TextView
+            android:id="@+id/btnsetlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_refresh_black_24dp"/>
+
+    </RelativeLayout>
+
+
+
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="4"
+       android:paddingRight="10dp"
+       android:paddingLeft="10dp">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1">
+
+
+           <ImageButton
+               android:layout_gravity="center"
+               android:id="@+id/absen"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_absen"
+               android:background="@drawable/login_button_bk" />
+
+           <TextView
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/roboto_bold"
+               android:text="Absen"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1">
+
+
+           <ImageButton
+               android:layout_gravity="center"
+               android:id="@+id/izin"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_izin"
+               android:background="@drawable/login_button_bk" />
+
+           <TextView
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/roboto_bold"
+               android:text="Izin"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1">
+
+
+           <ImageButton
+               android:layout_gravity="center"
+               android:id="@+id/history"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_history"
+               android:background="@drawable/login_button_bk" />
+
+           <TextView
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/roboto_bold"
+               android:text="History"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1">
+
+
+           <ImageButton
+               android:layout_gravity="center"
+               android:id="@+id/logout"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_power_settings_new_black_24dp"
+               android:background="@drawable/power" />
+
+           <TextView
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/roboto_bold"
+               android:text="Logout"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>
